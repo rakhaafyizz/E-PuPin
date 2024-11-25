@@ -7,7 +7,7 @@ Username : admin
 <br>
 Password : admin
 
-# Cara Instalasi
+# Cara Instalasi e
 <ul>
      <li> Ekstrak arsip / file zip yang telah didownload </li>
      <li> Buka folder "e-perpus-main" </li>
