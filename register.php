@@ -28,21 +28,87 @@ session_start();
     <!-- iCheck -->
     <link rel="stylesheet" href="assets/plugins/iCheck/square/blue.css">
     <!-- Icon -->
-    <link rel="icon" type="icon" href="assets/dist/img/logo_app.png">
+    <link rel="icon" type="icon" href="assets/dist/img/logo_vers2.png">
     <!-- Custom -->
     <link rel="stylesheet" href="assets/dist/css/custom.css">
     <!-- Toastr -->
     <link rel="stylesheet" href="assets/dist/css/toastr.min.css">
 </head>
 
-<body class="hold-transition login-page" style="font-family: 'Quicksand', sans-serif;">
+<!-- Tombol contact me -->
+<body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+       
+        .contact-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 65px;
+            height: 65px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #45a049;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-btn:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Optional: Hide on small screens */
+        @media (max-width: 600px) {
+            .contact-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/6281290246160" class="contact-btn">💬</a>
+
+</body>
+
+<body style="background-image: url('assets/dist/img/perpustakaan.png'); background-size: cover;"
+     class="hold-transition login-page" style="font-family: 'Quicksand', sans-serif;">
     <div class="login-box">
         <div class="login-logo">
-            <a href="masuk"><b><?= $row1['nama_app']; ?></b></a>
+            <a href="masuk" style="color:white"><b><?= $row1['nama_app']; ?></b></a>
+            <marquee behavior="right" style="font-size: 20px; color: white;" direction="scorll">Aplikasi Pustaka Pinjam SMK 1 TRIPLE J</marquee>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body" style="border-radius: 10px;">
-            <img src="assets/dist/img/logo_app.png" height="80px" width="80px" style="display: block; margin-left: auto; margin-right: auto; margin-top: -12px; margin-bottom: 5px;">
+            <img src="assets/dist/img/logo_vers2.png" height="180px" width="180px" style="display: block; margin-left: auto; margin-right: auto; margin-top: -12px; margin-bottom: 5px;">
 
             <form name="formLogin" action="function/Process.php?aksi=daftar" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
                 <div class="form-group has-feedback">
